@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Model">
+  <DataContextMoniker Name="/ModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="eb7b904e-fa10-4cea-b4ac-54a51e78ddc0" absoluteBounds="0.75, 3.125, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/ModelDataContext/Aluno" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b3e49983-1303-44a9-b963-e63a15aa0ebb" absoluteBounds="0.765, 3.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0837eec-1415-4a81-8a61-7e0e90959d7c" absoluteBounds="3.75, 1.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ModelDataContext/Curso" />
+      <nestedChildShapes>
+        <elementListCompartment Id="49c13372-0fba-4997-97d0-5f96873ce7cc" absoluteBounds="3.765, 2.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2839e766-afe2-499b-980a-453f13eb8429" absoluteBounds="0.75, 1.125, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/ModelDataContext/Materia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f991bd20-22ed-4677-9547-dc23c384d0c1" absoluteBounds="0.765, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 3.51524983723958); (3.75 : 3.51524983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelDataContext/Aluno/Aluno_Curso" />
+      <nodes>
+        <classShapeMoniker Id="eb7b904e-fa10-4cea-b4ac-54a51e78ddc0" />
+        <classShapeMoniker Id="b0837eec-1415-4a81-8a61-7e0e90959d7c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.32294840494792); (3.75 : 2.32294840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelDataContext/Materia/Materia_Curso" />
+      <nodes>
+        <classShapeMoniker Id="2839e766-afe2-499b-980a-453f13eb8429" />
+        <classShapeMoniker Id="b0837eec-1415-4a81-8a61-7e0e90959d7c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
